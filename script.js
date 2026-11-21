@@ -24,6 +24,7 @@ console.log(typeof name);
 
 
 
+console.log(typeof "captain America");
 
 
 
