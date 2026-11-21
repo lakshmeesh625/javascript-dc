@@ -8,7 +8,7 @@ console.log(typeof NaN);
 console.log(typeof(function hi() { console.log(hi) }))
 console.log(typeof [22, 44, 66]);
 let name = {
-    character: "Captai america"
+    character: "Captain america"
 };
 
 
