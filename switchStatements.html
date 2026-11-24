@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+    let day = 4;
+let number;
+
+
+
+switch (day) {
+    case 1:
+        number = "Sunday";
+        break;
+    case 2:
+        number = "Monday";
+        break;
+    case 3:
+        number = "Tuesday";
+        break;
+    case 4:
+        number = "Wednesday";
+        break;
+    case 5:
+        number = "Thursday";
+        break;
+    case 6:
+        number = "Friday";
+        break;
+    case 7:
+        number = "Saturday";
+        break;
+    default:
+        number = "Invalid Input";
+        
+        
+}
+
+console.log(number);
+
+//Builiding a rock paper scissors game
+
+
+let userChoice = window.prompt("Choose between rock paper and scissors")
+userChoice = userChoice.charAt(0).toUpperCase() + userChoice.slice(1)
+
+
+let choices = ["Rock", "Paper", "Scissor"];
+let computerChoice = choices[Math.floor(Math.random() * choices.length)]
+console.log(computerChoice);
+
+
+switch (userChoice) {
+    case computerChoice:
+        console.log("The game is tied");
+        break;
+    case "Rock":
+        if (computerChoice === "Paper") {
+            console.log("You won")
+        }
+        else {
+            console.log("You lost")
+        }
+
+        break;
+    case "Paper":
+        if (computerChoice === "Rock") {
+            console.log("You won")
+        }
+        else {
+             console.log("You lost")
+        }
+    case "Scissor":
+             if (computerChoice === "Paper") {
+            console.log("You won")
+        }
+        else {
+             console.log("You lost")
+        }
+        default :
+        console.log("Invalid input");
+}
+</script>
+
+    
+</body>
+</html>
