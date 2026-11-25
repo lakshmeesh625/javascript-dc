@@ -6,45 +6,59 @@
     <title>Document</title>
 </head>
 <body>
+    
+
 
 
     <script>
-        let PlayGame = prompt("Lets play rock paper scissor game")
-
-        if(PlayGame === "OK"){
-            let userChoice = window.prompt("Choose between Rock paper and scissors")
-            userChoice = userChoice.charAt(0).toUpperCase + userChoice.slice(1)
-            let choices = ["Rock" , "Paper", "Scissor"]
-            let computerChoice = choices[Math.floor(Math.random() * choices.length)]
-            console.log(computerChoice);
-
-            if(userChoice === computerChoice){
-                console.log(`The game is tied`);
-
-            }
-
-            else if(userChoice === "Rock" && computerChoice === "Scissor"){
-                 console.log(`Player wins`);  
-            }
-            else if(userChoice === "Paper" && computerChoice === "Rock"){
-                console.log(`Player wins`);
-            }
-            else if(userChoice === "Scissor" && computerChoice === "Paper"){
-            console.log(`Player wins`);
-            }
-          
-           
-            else  {
-                console.log(`Computer wins`)
-            }
-
-
-
-        }
-        else{
-            console.log(`No worries may be next time`)
-        }
-    </script>
+let willYouPlay = confirm("Lets play rock paper and scissors")
+if(willYouPlay ){
     
+    let userChoice = prompt("Choose betweeen rocks paper and scissor")
+    userChoice = userChoice.trim().toLowerCase();
+if(userChoice === "rock" || userChoice === "paper" || userChoice === "scossor"){
+
+    let choices = ["Rock" , "Paper" , "Scissor"]
+    let computerChoice = choices[Math.floor(Math.random() * choices.length)]
+    console.log(computerChoice);
+
+    if(computerChoice === userChoice){
+        console.log("The game is tied");
+    }
+    else if(computerChoice === "rock" && userChoice === "paper"){
+        alert("The player wins the game");
+    }
+
+    else if(computerChoice === "paper" && userChoice === "scissor"){
+        alert("The player wins the game");
+    }
+    else if(computerChoice === "scissor" && userChoice === "rock"){
+        alert("The player wins the game");
+    }
+    else {
+        alert("The computer wins the game");
+    }
+    let playAgain = confirm("Play again")
+    playAgain ?  location.reload() : alert("Thanks for playing")
+
+
+
+}
+else{
+    alert("You didnt choose rock / paper / scissor")
+}
+
+
+    
+    
+
+
+
+}
+else{
+    alert("No worries we will play the next time")
+}
+ 
+    </script>
 </body>
 </html>
