@@ -8,13 +8,14 @@ if (true) {
 console.log(a);
 
 
-var b = 7 
+let b = 7;
 
 function print() {
-    b = 9;
+    let b = 9;
+console.log(b);
 
 }
-
+ print()
 
 console.log(b);
 
