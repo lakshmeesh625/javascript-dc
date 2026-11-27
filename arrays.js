@@ -44,3 +44,25 @@ console.log(myArray1);
 myArray1.splice(3, 3, "axar", "hardik", "krunal");
 
 console.log(myArray1);
+
+
+
+
+
+let mensUpper = ["Hoodie", "sweatshirt", "Jumper", "T shirt"];
+let mensLower = ["sweatpants", "jeanspants", "shorts", "tights"];
+
+
+let womenupper = ["reversehoodie", "reversesweatshirt", "reversejumper", "reversetshirt"];
+let womensLower = ["reversesweatpants", "reversejeanspants", "reverseshorts", "reversetights"];
+
+let mensComplete = [mensUpper, mensLower];
+console.log(mensComplete);
+
+
+console.log(mensComplete[0][1]);
+
+let menComplete2 = [...mensUpper, ...mensLower]
+console.log(menComplete2);
+
+
